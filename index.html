@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link href="css/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="img/logo.png" />
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="graph-box">
+			<div class="box-header">
+				<div class="title">Top 10 Usuários mais Ativos</div>
+				<!-- Seletor de marcas -->
+				<div class="field">
+					<label>Filtrar por</label>
+					<select id="sel-brand"></select>
+					<!-- <div class="arrow-down"></div> -->
+				</div>
+			</div>
+			<!-- Contém gráfico -->
+			<div id="chart_div"></div>
+			<span class="obs">Clique no nome do usuário para mais informações</span>
+		</div>
+	</div>
+
+	<div class="modal">
+		<div class="profile-box">
+			<button class="btn-close">&times;</button>
+			<div class="avatar">
+				<img src="https://randomuser.me/api/portraits/med/men/66.jpg"/>
+			</div>
+			<div class="info">
+				<span class="name">Bertolino Ribeiro</span>
+				<span class="city">Ourinhos - Sergipe</span>
+				<div class="other-info">
+					<div class="attribute">
+						<span class="att-title">E-mail</span>
+						<span class="att-value">bertolino.ribeiro@example.com</span>
+					</div>
+					<div class="attribute">
+						<span class="att-title">Telefone</span>
+						<span class="att-value">(41) 8628-9449</span>
+					</div>
+					<div class="attribute">
+						<span class="att-title">Celular</span>
+						<span class="att-value">(92) 3629-1479</span>
+					</div>
+					<div class="attribute">
+						<span class="att-title">Sexo</span>
+						<span class="att-value">Masculino</span>
+					</div>
+					<div class="attribute">
+						<span class="att-title">Nascimento</span>
+						<span class="att-value">25/10/1985</span>
+					</div>
+					<div class="attribute">
+						<span class="att-title">Naturalidade</span>
+						<span class="att-value">BR</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				Total de interações em <span class="brand"></span>: <span class="qty"></span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

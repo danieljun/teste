@@ -1,0 +1,19 @@
+{
+  "name": "Teste",
+  "version": "1.0.0",
+  "description": "Gráfico de Usuários Influentes",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Jun Shimizu",
+  "license": " ",
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-compass": "~1.1.9",
+    "gulp-jshint": "~1.0"
+  },
+  "dependencies": {
+    "mustache": "^2.2.1"
+  }
+}

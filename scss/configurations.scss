@@ -1,0 +1,26 @@
+$headerSize: 64px;
+$sidebarSize: 200px;
+$sepV: 30px;
+$sepH: 30px;
+$sepModal: 30px;
+
+@mixin opacity($trans) {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+	filter: alpha(opacity=#{$trans * 100});
+	-moz-opacity: $trans;
+	-khtml-opacity: $trans;
+	opacity: $trans;
+}
+
+@mixin box-shadow($opt){
+	-webkit-box-shadow: $opt;
+	box-shadow: $opt;
+}
+
+@mixin clearfix(){
+	&:after{
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+}
