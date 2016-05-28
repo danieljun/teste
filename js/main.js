@@ -216,7 +216,7 @@ function showModal(id){
 		var user = o_data[id];
 
 		// Avatar
-		$('.avatar img').attr('src',user.picture.large);
+		$('.avatar').html($('<img/>').attr('src',user.picture.large));
 
 		// Nome
 		$('.info .name').text(user.name.first + ' ' + user.name.last);
